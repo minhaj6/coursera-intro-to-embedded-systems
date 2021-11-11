@@ -22,19 +22,74 @@
 #define __STATS_H__
 
 /* Add Your Declarations and Function Comments here */ 
-
+unsigned char *sort_array(unsigned char *array, unsigned int n);
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief sorts the array from largest to smallest number.
  *
- * <Add Extended Description Here>
+ * @param array Pointer to the array to be sorted. 
+ * @param n Length of the array.
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
+ * @return The sorted array. 
  */
 
+void print_array(unsigned char *array, unsigned int n);
+/**
+ * @brief prints the array passed as input.
+ *
+ * @param array pointer to the array needs to be printed. 
+ * @param n Length of the array.
+ *
+ * @return The sorted array. 
+ */
+
+float find_median(unsigned char *array, unsigned int n);
+/**
+ * @brief This function finds median of a sorted array.
+ *
+ * @param array pointer to the array needs to be printed. 
+ * @param n Length of the array.
+ *
+ * @return median value of the array.
+ */
+
+float find_mean(unsigned char *array, unsigned int n);
+/**
+ * @brief This function finds mean of an array.
+ *
+ * @param array pointer to the array needs to be printed. 
+ * @param n Length of the array.
+ *
+ * @return mean value of the array.
+ */
+
+unsigned char find_maximum(unsigned char *array, unsigned int n);
+/**
+ * @brief This function finds maximum of an array.
+ *
+ * @param array pointer to the array needs to be printed. 
+ * @param n Length of the array.
+ *
+ * @return maximum value of the array.
+ */
+
+unsigned char find_minimum(unsigned char *array, unsigned int n);
+/**
+ * @brief This function finds minimum of an array.
+ *
+ * @param array pointer to the array needs to be printed. 
+ * @param n Length of the array.
+ *
+ * @return minimum value of the array.
+ */
+
+void print_statistics(unsigned char *array, unsigned int n);
+/**
+ * @brief This function prints statistics of an array.
+ *
+ * @param array pointer to the array needs to be printed. 
+ * @param n Length of the array.
+ *
+ * @return returns void.
+ */
 
 #endif /* __STATS_H__ */
